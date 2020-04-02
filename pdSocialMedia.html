@@ -47,7 +47,7 @@ https://templatemo.com/tm-543-breezed
                     </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <a href="http://rparihar.socialpaid.hop.clickbank.net/?pid=nooptin" class="main-button-icon">
+                                <a href="http://rparihar.socialpaid.hop.clickbank.net/?pid=nooptin" class="main-button-icon" id="startTrialButton">
                                     Click Here 
                                 </a>
                                 <pre>
@@ -65,6 +65,13 @@ https://templatemo.com/tm-543-breezed
     <!-- ***** About Area Ends ***** -->
     <!-- ***** Footer Start ***** -->
     
+      
+      <script type="text/javascript">
+document.getElementById('startTrialButton').addEventListener('click', function() {
+fbq('track', 'StartTrial');
+...
+}, false);
+</script>
     
 
     <!-- jQuery -->
